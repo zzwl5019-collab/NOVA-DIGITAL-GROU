@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<title>NOVA DIGITAL GROUP</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080b18;color:#fff;line-height:1.6}
+:root{--blue:#3988ff;--purple:#9255ff;--muted:#aab3c7}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#0b1022;position:sticky;top:0;z-index:10;border-bottom:1px solid #202945}
+.logo{font-size:23px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--blue)}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:#ddd;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--blue)}
+.lang{background:#17213b;color:white;border:1px solid #34466e;padding:9px 13px;border-radius:8px}
+.hero{text-align:center;padding:110px 7% 100px;background:radial-gradient(ellipse at top,#182c5a 0%,#080b18 65%)}
+.tag{color:#8db8ff;letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(40px,8vw,76px);line-height:1.12;margin:22px auto;max-width:900px}
+h1 span{background:linear-gradient(90deg,#55a4ff,#a56bff);background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:650px;margin:0 auto 30px;font-size:17px}
+.btn{display:inline-block;padding:14px 25px;border-radius:9px;background:linear-gradient(100deg,var(--blue),var(--purple));color:white;text-decoration:none;font-weight:bold}
+section{padding:75px 7%}
+.section-title{text-align:center;font-size:34px;margin-bottom:12px}
+.section-desc{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 40px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.service{padding:27px;background:linear-gradient(145deg,#131e38,#0d1326);border:1px solid #26375c;border-radius:15px;transition:.25s}
+.service:hover{transform:translateY(-6px);border-color:#548eff}
+.service .icon{font-size:30px}
+.service h3{margin:14px 0 8px;color:#8db8ff}
+.service p{color:var(--muted);font-size:14px}
+.about{background:#0d1428;text-align:center}
+.about p{max-width:780px;margin:20px auto;color:var(--muted)}
+.stats{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;margin-top:35px}
+.stats strong{display:block;font-size:27px;color:#8db8ff}
+.stats small{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.step{padding:22px;border-left:3px solid var(--purple);background:#111a30;border-radius:8px}
+.step b{color:#9b82ff}
+.contact{text-align:center;background:radial-gradient(ellipse at bottom,#17254b,#080b18)}
+.contact p{color:var(--muted);margin:15px auto 25px}
+footer{text-align:center;padding:25px;color:#8994aa;border-top:1px solid #202945;font-size:13px}
+@media(max-width:650px){
+header{padding:16px 5%;flex-wrap:wrap;gap:14px}
+nav{gap:12px;flex-wrap:wrap}
+nav a{font-size:12px}
+.hero{padding:80px 6%}
+section{padding:60px 6%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">NOVA<span>.</span></div>
+<nav>
+<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+<a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+<a href="#about" data-en="About" data-ar="من نحن">About</a>
+<a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+<button class="lang" onclick="toggleLang()">العربية</button>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="home">
+<div class="tag">INNOVATION WITHOUT LIMITS</div>
+<h1 data-en="Building The <span>Digital Future</span>" data-ar="نبني <span>المستقبل الرقمي</span>">Building The <span>Digital Future</span></h1>
+<p data-en="We bring technology, creativity and business together to build powerful digital experiences for people and companies around the world." data-ar="نجمع التقنية والإبداع والأعمال لبناء تجارب رقمية مميزة للأفراد والشركات حول العالم.">We bring technology, creativity and business together to build powerful digital experiences for people and companies around the world.</p>
+<a href="#services" class="btn" data-en="Explore Our Services" data-ar="اكتشف خدماتنا">Explore Our Services</a>
+</div>
+
+<section id="services">
+<h2 class="section-title" data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+<p class="section-desc" data-en="One group. Multiple possibilities. Unlimited innovation." data-ar="مجموعة واحدة، إمكانيات متعددة، وابتكار بلا حدود.">One group. Multiple possibilities. Unlimited innovation.</p>
+<div class="services">
+<div class="service"><div class="icon">🤖</div><h3>NOVA AI</h3><p data-en="Smart AI solutions and digital tools." data-ar="حلول وأدوات رقمية ذكية بالذكاء الاصطناعي.">Smart AI solutions and digital tools.</p></div>
+<div class="service"><div class="icon">🎨</div><h3>NOVA CREATIVE</h3><p data-en="Advertising, graphic design and visual identity." data-ar="تصميم الإعلانات والجرافيك والهويات البصرية.">Advertising, graphic design and visual identity.</p></div>
+<div class="service"><div class="icon">💻</div><h3>NOVA TECH</h3><p data-en="Websites, applications and technology solutions." data-ar="إنشاء المواقع والتطبيقات والحلول التقنية.">Websites, applications and technology solutions.</p></div>
+<div class="service"><div class="icon">📈</div><h3>NOVA BUSINESS</h3><p data-en="Digital marketing and business growth solutions." data-ar="التسويق الإلكتروني وحلول تطوير الأعمال.">Digital marketing and business growth solutions.</p></div>
+<div class="service"><div class="icon">🛍️</div><h3>NOVA MARKET</h3><p data-en="A digital marketplace for services and products." data-ar="سوق رقمي للخدمات والمنتجات.">A digital marketplace for services and products.</p></div>
+<div class="service"><div class="icon">🎓</div><h3>NOVA ACADEMY</h3><p data-en="Digital learning, courses and skills development." data-ar="التعليم الرقمي والدورات وتطوير المهارات.">Digital learning, courses and skills development.</p></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2 class="section-title" data-en="About NOVA" data-ar="عن NOVA">About NOVA</h2>
+<p data-en="NOVA DIGITAL GROUP is a digital brand built around creativity, technology and innovation. Our vision is to make digital services more accessible and help individuals and businesses grow in a connected world." data-ar="NOVA DIGITAL GROUP علامة رقمية تقوم على الإبداع والتقنية والابتكار. رؤيتنا جعل الخدمات الرقمية أكثر سهولة ومساعدة الأفراد والشركات على النمو في عالم مترابط.">NOVA DIGITAL GROUP is a digital brand built around creativity, technology and innovation. Our vision is to make digital services more accessible and help individuals and businesses grow in a connected world.</p>
+<div class="stats">
+<div><strong>01</strong><small data-en="Big Vision" data-ar="رؤية كبيرة">Big Vision</small></div>
+<div><strong>06</strong><small data-en="Business Divisions" data-ar="أقسام متنوعة">Business Divisions</small></div>
+<div><strong>∞</strong><small data-en="Possibilities" data-ar="إمكانيات بلا حدود">Possibilities</small></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title" data-en="How We Work" data-ar="كيف نعمل">How We Work</h2>
+<p class="section-desc" data-en="A simple path from idea to digital experience." data-ar="خطوات بسيطة من الفكرة إلى التجربة الرقمية.">A simple path from idea to digital experience.</p>
+<div class="steps">
+<div class="step"><b>01</b><h3 data-en="Discover" data-ar="اكتشف">Discover</h3><p data-en="Understand your idea and goals." data-ar="نفهم فكرتك وأهدافك.">Understand your idea and goals.</p></div>
+<div class="step"><b>02</b><h3 data-en="Plan" data-ar="خطط">Plan</h3><p data-en="Create the right digital strategy." data-ar="نضع الخطة الرقمية المناسبة.">Create the right digital strategy.</p></div>
+<div class="step"><b>03</b><h3 data-en="Create" data-ar="أنشئ">Create</h3><p data-en="Build your solution with creativity." data-ar="نبني الحل بالإبداع والتقنية.">Build your solution with creativity.</p></div>
+<div class="step"><b>04</b><h3 data-en="Grow" data-ar="انطلق">Grow</h3><p data-en="Move forward and keep improving." data-ar="ننطلق ونواصل التطوير.">Move forward and keep improving.</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title" data-en="Let's Build Something Great" data-ar="لنصنع شيئاً عظيماً">Let's Build Something Great</h2>
+<p data-en="Have a project or an idea? Get in touch with NOVA DIGITAL GROUP." data-ar="عندك مشروع أو فكرة؟ تواصل مع NOVA DIGITAL GROUP.">Have a project or an idea? Get in touch with NOVA DIGITAL GROUP.</p>
+<a class="btn" href="mailto:contact@novadigitalgroup.com" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a>
+</section>
+</main>
+
+<footer>
+© <span id="year"></span> NOVA DIGITAL GROUP. All Rights Reserved.
+<br>INNOVATION WITHOUT LIMITS.
+</footer>
+
+<script>
+let currentLang="en";
+function toggleLang(){
+currentLang=currentLang==="en"?"ar":"en";
+document.documentElement.lang=currentLang;
+document.documentElement.dir=currentLang==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-en]").forEach(el=>{
+el.innerHTML=el.getAttribute("data-"+currentLang);
+});
+document.querySelector(".lang").textContent=currentLang==="en"?"العربية":"English";
+}
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
